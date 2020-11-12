@@ -58,8 +58,10 @@ h1{
 input{
     cursor: pointer;
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 20px;
     margin-bottom: 30px;
+    width: 140px;
+    height: 70px;
 }
 #mLeft{
     margin-left: 10px;
