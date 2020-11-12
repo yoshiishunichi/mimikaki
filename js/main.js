@@ -283,11 +283,6 @@
         }
     })
 
-    /* ピッチインで拡大しない */
-    document.documentElement.addEventListener('touchstart', function (e) {
-        if (e.touches.length >= 2) { e.preventDefault(); }
-    }, { passive: false });
-
     // ダブルタップで拡大しない
     var t = 0;
     document.documentElement.addEventListener('touchend', function (e) {
