@@ -117,7 +117,7 @@
             null2.style.opacity = 1.0;
         }, 5000);
 
-        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきで小さい耳クソが取れました…";
+        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきで小さい耳クソが取れました… https://twitter.com/ganja_tuber/status/1326921605830860801/photo/1";
 
     }
     function normalkuso() {
@@ -172,7 +172,7 @@
             kansya1.style.opacity = 1;
         }, 6000);
 
-        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきで普通の耳クソが取れました…";
+        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきで普通の耳クソが取れました… https://twitter.com/ganja_tuber/status/1326921562751176721/photo/1";
 
     }
     function bigkuso() {
@@ -234,7 +234,7 @@
         setTimeout(() => {
             kansya2.style.opacity = 1;
         }, 7000);
-        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきでデカい耳クソが取れました…";
+        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきでデカい耳クソが取れました… https://twitter.com/ganja_tuber/status/1326921511366692864/photo/1";
 
     }
     function brain() {
@@ -271,7 +271,7 @@
         setTimeout(() => {
             null2.style.opacity = 1.0;
         }, 5000);
-        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきで脳みそが取れました…";
+        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきで脳みそが取れました… https://twitter.com/ganja_tuber/status/1326921450058637315/photo/1";
 
     }
 
