@@ -11,6 +11,9 @@
     const kansya1 = document.getElementById("kansya1");
     const kansya2 = document.getElementById("kansya2");
 
+    const tweetbutton = document.getElementById("tweetbutton");
+    const resultText = document.getElementById("result");
+
     // 耳かきのmargin-left
     let mLeft = 50;
 
@@ -68,6 +71,8 @@
         setTimeout(() => {
             null2.style.opacity = 1.0;
         }, 5000);
+
+        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきで何も取れませんでした…";
     }
     function minikuso() {
         var nullmusic = new Audio('nullsong.mp3');
@@ -111,6 +116,9 @@
         setTimeout(() => {
             null2.style.opacity = 1.0;
         }, 5000);
+
+        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきで小さい耳クソが取れました…";
+
     }
     function normalkuso() {
         var nullmusic = new Audio('nullsong.mp3');
@@ -163,6 +171,9 @@
         setTimeout(() => {
             kansya1.style.opacity = 1;
         }, 6000);
+
+        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきで普通の耳クソが取れました…";
+
     }
     function bigkuso() {
         var nullmusic = new Audio('nullsong.mp3');
@@ -223,6 +234,8 @@
         setTimeout(() => {
             kansya2.style.opacity = 1;
         }, 7000);
+        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきでデカい耳クソが取れました…";
+
     }
     function brain() {
         var nullmusic = new Audio('noumiso.mp3');
@@ -258,6 +271,7 @@
         setTimeout(() => {
             null2.style.opacity = 1.0;
         }, 5000);
+        tweetbutton.href = "http://twitter.com/share?url=https://yoshiishunichi.github.io/mimikaki/&text=耳かきで脳みそが取れました…";
 
     }
 
@@ -266,6 +280,8 @@
         if (result === false) {
             return
         }
+        resultText.style.display = "block";
+
         if (mLeft >= -100) {
             lack();
         }
