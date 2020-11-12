@@ -14,8 +14,18 @@
     const tweetbutton = document.getElementById("tweetbutton");
     const resultText = document.getElementById("result");
 
+    const muteButton = document.getElementById("mute");
+    const intense = document.getElementById("intension");
+
     // 耳かきのmargin-left
     let mLeft = 50;
+
+    let sound = true;
+
+    muteButton.addEventListener("click", () => {
+        sound = false;
+        intense.textContent = "ミュートしました";
+    })
 
     closer.addEventListener("click", () => {
         mLeft -= 5;
@@ -29,12 +39,15 @@
         mimikaki.style.display = "none";
         closer.style.display = "none";
         spread.style.display = "none";
+        muteButton.style.display = "none";
         kaku.style.display = "none";
     }
 
     function lack() {
         var nullmusic = new Audio('nullsong.mp3');
-        nullmusic.play();
+        if (sound) {
+            nullmusic.play();
+        }
         invisible();
         null1.style.display = "block";
         null1.style.opacity = 0.2;
@@ -76,7 +89,9 @@
     }
     function minikuso() {
         var nullmusic = new Audio('nullsong.mp3');
-        nullmusic.play();
+        if (sound) {
+            nullmusic.play();   
+        }
         invisible();
 
         null1.textContent = "小さい耳クソが…";
@@ -122,7 +137,9 @@
     }
     function normalkuso() {
         var nullmusic = new Audio('nullsong.mp3');
-        nullmusic.play();
+        if (sound) {
+            nullmusic.play();
+        }
         invisible();
 
         null1.textContent = "普通の耳クソが…";
@@ -177,7 +194,9 @@
     }
     function bigkuso() {
         var nullmusic = new Audio('nullsong.mp3');
-        nullmusic.play();
+        if (sound) {
+            nullmusic.play();
+        }
         invisible();
 
         null1.textContent = "デカい耳クソが…";
@@ -254,7 +273,9 @@
         null1.style.display = "block";
         null1.style.opacity = 0;
         setTimeout(() => {
-            nullmusic.play();
+            if (sound) {
+                nullmusic.play();
+            }
 
             null1.style.opacity = 0.5;
         }, 3500);
